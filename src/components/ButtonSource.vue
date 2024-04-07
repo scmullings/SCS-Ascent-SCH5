@@ -1,6 +1,11 @@
 <template>
   <button :class="$style.buttonSource" :style="buttonSourceStyle">
-    <img :class="$style.iconBluray" alt="" :src="iconBluray" />
+    <img
+      :class="$style.iconBluray"
+      alt=""
+      :src="iconBluray"
+      :style="iconBlurayStyle"
+    />
     <div :class="$style.bluRay" :style="bluRayStyle">{{bluRay}}</div>
   </button>
 </template>
@@ -12,22 +17,24 @@
     props: {
       iconBluray: { type: String },
       bluRay: { type: String },
-      propPadding: { type: [Object, Array, String, Number, Boolean] },
-      propWidth: { type: [Object, Array, String, Number, Boolean] },
-      propWidth1: { type: [Object, Array, String, Number, Boolean] },
-      frameDivPadding: { type: [Object, Array, String, Number, Boolean] },
       bluRayMinWidth: { type: [Object, Array, String, Number, Boolean] },
+      buttonSourcePadding: { type: [Object, Array, String, Number, Boolean] },
+      iconBlurayOverflow: { type: String },
     },
     computed: {
-      buttonSourceStyle() {
-        return {
-          padding: this.propPadding,
-        };
-      },
       bluRayStyle() {
         return {
-          width: this.propWidth1,
           minWidth: this.bluRayMinWidth,
+        };
+      },
+      buttonSourceStyle() {
+        return {
+          padding: this.buttonSourcePadding,
+        };
+      },
+      iconBlurayStyle() {
+        return {
+          overflow: this.iconBlurayOverflow,
         };
       },
     },

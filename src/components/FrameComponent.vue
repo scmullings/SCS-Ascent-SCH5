@@ -103,6 +103,7 @@
   }
   .subpageInstructionsWrapper {
     align-self: stretch;
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

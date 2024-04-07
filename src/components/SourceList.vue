@@ -1,36 +1,41 @@
 <template>
   <section :class="$style.sourceList">
     <div :class="$style.sourcesList">
-      <button :class="$style.buttonSource">
-        <img :class="$style.iconDisplay" alt="" src="/icon-display.svg" />
-        <div :class="$style.laptop">Laptop</div></button
-      ><ButtonSource
+      <ButtonSource
+        iconBluray="/icon-display.svg"
+        bluRay="Laptop"
+        bluRayMinWidth="62px"
+        buttonSourcePadding="var(--padding-sm) var(--padding-49xl)"
+        iconBlurayOverflow="unset"
+      /><ButtonSource
         iconBluray="/icon-bluray@2x.png"
         bluRay="Blu-ray"
       /><ButtonSource
         iconBluray="/icon-display-1@2x.png"
         bluRay="Cable TV"
-        propPadding="var(--padding-sm) var(--padding-41xl)"
-        propWidth1="unset"
         bluRayMinWidth="78px"
+        buttonSourcePadding="var(--padding-sm) var(--padding-41xl)"
+        iconBlurayOverflow="hidden"
       /><ButtonSource
         iconBluray="/icon-apple@2x.png"
         bluRay="Apple TV"
-        propPadding="var(--padding-sm) var(--padding-40xl)"
-        propWidth1="unset"
         bluRayMinWidth="79px"
-      />
-      <button :class="$style.buttonSource1">
-        <img :class="$style.iconDisplay1" alt="" src="/icon-display-2@2x.png" />
-        <div :class="$style.wireless">Wireless</div></button
-      ><ButtonSource
+        buttonSourcePadding="var(--padding-sm) var(--padding-40xl)"
+        iconBlurayOverflow="hidden"
+      /><ButtonSource
+        iconBluray="/icon-display-2@2x.png"
+        bluRay="Wireless"
+        bluRayMinWidth="75px"
+        buttonSourcePadding="var(--padding-sm) var(--padding-42xl)"
+        iconBlurayOverflow="unset"
+      /><ButtonSource
         iconBluray="/icon-room-pc.svg"
         bluRay="Room PC"
-        propPadding="var(--padding-sm) var(--padding-40xl)"
-        propWidth1="unset"
         bluRayMinWidth="80px"
+        buttonSourcePadding="var(--padding-sm) var(--padding-40xl)"
+        iconBlurayOverflow="hidden"
       />
-      <div :class="$style.buttonSource2">
+      <div :class="$style.buttonSource">
         <img
           :class="$style.iconCamera"
           loading="lazy"
@@ -72,75 +77,6 @@
   });
 </script>
 <style module>
-  .iconDisplay {
-    width: 42px;
-    height: 42px;
-    position: relative;
-  }
-  .laptop {
-    position: relative;
-    font-size: var(--buttons-large-dgbtn-l-regular-size);
-    line-height: 22px;
-    font-family: var(--header-3-h3-s-semi-bold);
-    color: var(--theme-light-text-dark);
-    text-align: left;
-    display: inline-block;
-    min-width: 62px;
-  }
-  .buttonSource {
-    cursor: pointer;
-    border: none;
-    padding: var(--padding-sm) var(--padding-49xl);
-    background-color: var(--theme-light-btn-control-off);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-    border-right: 1px solid var(--theme-light-stroke);
-    border-left: 1px solid var(--theme-light-stroke);
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-5xs);
-  }
-  .buttonSource:hover {
-    background-color: var(--theme-light-bg-page);
-  }
-  .iconDisplay1 {
-    width: 42px;
-    height: 42px;
-    position: relative;
-    object-fit: cover;
-  }
-  .wireless {
-    position: relative;
-    font-size: var(--buttons-large-dgbtn-l-regular-size);
-    line-height: 22px;
-    font-family: var(--header-3-h3-s-semi-bold);
-    color: var(--theme-light-text-dark);
-    text-align: left;
-    display: inline-block;
-    min-width: 75px;
-  }
-  .buttonSource1 {
-    cursor: pointer;
-    border: none;
-    padding: var(--padding-sm) var(--padding-42xl);
-    background-color: var(--theme-light-btn-control-off);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-    border-right: 1px solid var(--theme-light-stroke);
-    border-left: 1px solid var(--theme-light-stroke);
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap-5xs);
-  }
-  .buttonSource1:hover {
-    background-color: var(--theme-light-bg-page);
-  }
   .iconCamera {
     width: 42px;
     height: 42px;
@@ -153,7 +89,7 @@
     line-height: 22px;
     display: inline-block;
   }
-  .buttonSource2 {
+  .buttonSource {
     background-color: var(--theme-light-btn-control-off);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-right: 1px solid var(--theme-light-stroke);
