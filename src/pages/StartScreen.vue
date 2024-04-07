@@ -45,7 +45,7 @@
     letter-spacing: -0.02em;
     line-height: 39px;
     font-weight: 600;
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
     color: var(--theme-light-text-dark);
     text-align: center;
     display: flex;

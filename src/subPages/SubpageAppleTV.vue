@@ -237,7 +237,7 @@
     font-size: var(--buttons-large-dgbtn-l-regular-size);
   }
   .subpageAppleTv {
-    width: 621px;
+    width: 628px;
     background-color: var(--theme-light-bg-card);
     overflow: hidden;
     display: none;
@@ -252,7 +252,7 @@
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
   }
 
   @media screen and (max-width: 450px) {

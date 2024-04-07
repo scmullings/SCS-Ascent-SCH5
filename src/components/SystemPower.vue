@@ -5,35 +5,53 @@
       <div :class="$style.powerOffCardInner">
         <div :class="$style.frameParent">
           <div :class="$style.frameWrapper">
-            <div :class="$style.systemParent">
-              <div :class="$style.system">
+            <div :class="$style.frameGroup">
+              <div :class="$style.statusCirclesParent">
                 <div :class="$style.statusCircles" />
-                <div :class="$style.ellipseOff" />
+                <div :class="$style.statusCircles1" />
               </div>
               <div :class="$style.powerButton">00:28</div>
             </div>
           </div>
-          <div :class="$style.shutdownButton">
-            <div
-              :class="$style.buttonShutdown"
-              @click="onButtonShutdownContainerClick"
-            >
-              <div :class="$style.off">
-                <div :class="$style.button">Shutdown Now</div>
-              </div>
-            </div>
+          <div :class="$style.darkPowerButton">
+            <Property1InActive
+              button="Shutdown Now"
+              property1InActiveWidth="unset"
+              property1InActiveBoxShadow="0px 2px 2px rgba(0, 0, 0, 0.25)"
+              property1InActiveHeight="unset"
+              property1InActivePosition="relative"
+              property1InActiveTop="unset"
+              property1InActiveLeft="unset"
+              offBorderRadius="4px"
+              offBackground="unset"
+              offBackgroundColor="0px solid #ef4444"
+              buttonLetterSpacing="unset"
+              buttonTextTransform="unset"
+              buttonColor="#eee"
+              buttonLineHeight="21.6px"
+              buttonFontWeight="unset"
+            />
             <div :class="$style.orWrapper">
               <div :class="$style.or">OR</div>
             </div>
-            <div :class="$style.cancelButton">
-              <div
-                :class="$style.buttonCancel"
-                @click="onButtonCancelContainerClick"
-              >
-                <div :class="$style.off1">
-                  <div :class="$style.button1">Cancel</div>
-                </div>
-              </div>
+            <div :class="$style.standardDarkBtnWrapper">
+              <Property1InActive
+                button="Cancel"
+                property1InActiveWidth="unset"
+                property1InActiveBoxShadow="0px 2px 2px rgba(0, 0, 0, 0.25)"
+                property1InActiveHeight="unset"
+                property1InActivePosition="relative"
+                property1InActiveTop="unset"
+                property1InActiveLeft="unset"
+                offBorderRadius="4px"
+                offBackground="unset"
+                offBackgroundColor="#fff"
+                buttonLetterSpacing="unset"
+                buttonTextTransform="unset"
+                buttonColor="#646464"
+                buttonLineHeight="21.6px"
+                buttonFontWeight="unset"
+              />
             </div>
           </div>
         </div>
@@ -43,17 +61,11 @@
 </template>
 <script>
   import { defineComponent } from "vue";
+  import Property1InActive from "./Property1InActive.vue";
 
   export default defineComponent({
     name: "SystemPower",
-    methods: {
-      onButtonShutdownContainerClick() {
-        this.$router.push("/start-screen");
-      },
-      onButtonCancelContainerClick() {
-        this.$router.push("/");
-      },
-    },
+    components: { Property1InActive },
   });
 </script>
 <style module>
@@ -72,7 +84,7 @@
     width: 100%;
     height: 100%;
   }
-  .ellipseOff {
+  .statusCircles1 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -83,7 +95,7 @@
     height: 100%;
     z-index: 1;
   }
-  .system {
+  .statusCirclesParent {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -100,7 +112,7 @@
     white-space: nowrap;
     z-index: 2;
   }
-  .systemParent {
+  .frameGroup {
     height: 126px;
     width: 126px;
     position: relative;
@@ -112,40 +124,6 @@
     align-items: flex-start;
     justify-content: center;
     padding: 0px var(--padding-xl);
-  }
-  .button {
-    height: 60px;
-    flex: 1;
-    position: relative;
-    line-height: 21.6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    z-index: 1;
-  }
-  .off {
-    flex: 1;
-    border-radius: var(--br-9xs);
-    background-color: var(--dg-generic-destructive-500);
-    box-shadow: var(--btn-off-style);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    white-space: nowrap;
-    max-width: 100%;
-  }
-  .buttonShutdown {
-    align-self: stretch;
-    box-shadow: var(--new);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 100%;
-    cursor: pointer;
-    color: var(--theme-light-text-light);
   }
   .or {
     width: 26px;
@@ -164,36 +142,7 @@
     justify-content: center;
     padding: 0px var(--padding-xl);
   }
-  .button1 {
-    height: 60px;
-    flex: 1;
-    position: relative;
-    line-height: 21.6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  .off1 {
-    flex: 1;
-    border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--btn-off-style);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .buttonCancel {
-    flex: 1;
-    box-shadow: var(--new);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    cursor: pointer;
-  }
-  .cancelButton {
+  .standardDarkBtnWrapper {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -201,7 +150,7 @@
     justify-content: flex-end;
     padding: 0px var(--padding-42xl) 0px 62px;
   }
-  .shutdownButton {
+  .darkPowerButton {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -261,7 +210,7 @@
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
   }
 
   @media screen and (max-width: 450px) {
@@ -275,7 +224,7 @@
       line-height: 26px;
     }
 
-    .cancelButton {
+    .standardDarkBtnWrapper {
       padding-left: var(--padding-xl);
       padding-right: var(--padding-xl);
       box-sizing: border-box;

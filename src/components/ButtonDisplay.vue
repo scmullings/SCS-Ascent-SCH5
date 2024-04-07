@@ -75,7 +75,7 @@
     position: relative;
     font-size: var(--buttons-small-dg-btn-s-regular-size);
     line-height: 17px;
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
     color: var(--theme-light-text-dark);
     text-align: left;
     display: inline-block;
@@ -85,7 +85,7 @@
     cursor: pointer;
     border: 0.5px solid var(--theme-light-stroke);
     padding: var(--padding-8xs-5) var(--padding-26xl);
-    background-color: var(--theme-light-btn-banner-off);
+    background-color: transparent;
     border-radius: var(--br-8xs);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5) inset;
     display: flex;
@@ -111,6 +111,6 @@
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
   }
 </style>

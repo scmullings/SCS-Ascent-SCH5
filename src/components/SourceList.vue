@@ -85,8 +85,9 @@
   }
   .camera {
     width: 68px;
+    height: 22px;
     position: relative;
-    line-height: 22px;
+    line-height: 21.6px;
     display: inline-block;
   }
   .buttonSource {
@@ -104,7 +105,7 @@
     gap: var(--gap-5xs);
   }
   .sourcesList {
-    width: 1160px;
+    width: 1120px;
     overflow-x: auto;
     flex-shrink: 0;
     display: flex;
@@ -248,7 +249,7 @@
     position: relative;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     line-height: 22px;
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
     color: var(--theme-light-text-light);
     text-align: left;
     display: inline-block;
@@ -258,7 +259,7 @@
     cursor: pointer;
     border: none;
     padding: var(--padding-sm) var(--padding-17xl);
-    background-color: var(--theme-light-btn-banner-off);
+    background-color: transparent;
     background: linear-gradient(180deg, #2a2f34, #181c1e);
     box-shadow: var(--new);
     border-left: 2px solid var(--theme-light-stroke);
@@ -270,7 +271,7 @@
     gap: var(--gap-5xs);
   }
   .sourceList {
-    background-color: var(--theme-light-bg-nav);
+    background: linear-gradient(180deg, #2a2f34, #181c1e);
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -281,10 +282,10 @@
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
   }
 
-  @media screen and (max-width: 1225px) {
+  @media screen and (max-width: 1200px) {
     .sourceList {
       flex-wrap: wrap;
     }

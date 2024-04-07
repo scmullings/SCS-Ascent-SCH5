@@ -53,7 +53,7 @@
     position: relative;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     line-height: 22px;
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
     color: var(--theme-light-text-dark);
     text-align: left;
     display: inline-block;

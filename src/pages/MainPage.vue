@@ -1,9 +1,7 @@
 <template>
   <div :class="$style.mainPage">
     <section :class="$style.bgMain">
-      <div :class="$style.upperBannerParent">
-        <UpperBanner1 /><DisplayList1 />
-      </div>
+      <div :class="$style.parentBanner"><UpperBanner1 /><DisplayList1 /></div>
       <div :class="$style.subPageArea">
         <SubpageRoomPC /><SubpageWireless /><SubpageAppleTV /><SubpageTV /><SubpageLaptop />
         <div :class="$style.subpageInstructions" data-animate-on-scroll>
@@ -71,7 +69,7 @@
   });
 </script>
 <style module>
-  .upperBannerParent {
+  .parentBanner {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -101,7 +99,7 @@
     margin-top: -596px;
   }
   .subpageInstructions {
-    width: 1250px;
+    width: 1264px;
     background-color: var(--theme-light-bg-card);
     overflow: hidden;
     display: none;
@@ -149,12 +147,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 540px;
+    gap: 496px;
     max-width: 100%;
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--subheading-dg-sh-regular);
+    font-family: var(--buttons-large-dgbtn-l-regular);
   }
   .mainPage {
     width: 100%;
@@ -168,7 +166,7 @@
 
   @media screen and (max-width: 750px) {
     .bgMain {
-      gap: 270px 540px;
+      gap: 248px 496px;
     }
   }
   @media screen and (max-width: 450px) {
@@ -183,7 +181,7 @@
     }
 
     .bgMain {
-      gap: 135px 540px;
+      gap: 124px 496px;
     }
   }
 </style>
