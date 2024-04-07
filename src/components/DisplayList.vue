@@ -39,6 +39,6 @@
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--subheading-dg-sh-regular);
   }
 </style>

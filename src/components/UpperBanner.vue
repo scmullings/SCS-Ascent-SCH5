@@ -228,6 +228,6 @@
     text-align: left;
     font-size: var(--buttons-small-dg-btn-s-regular-size);
     color: var(--theme-light-text-light);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--subheading-dg-sh-regular);
   }
 </style>

@@ -48,7 +48,7 @@
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--subheading-dg-sh-regular);
   }
 
   @media screen and (max-width: 450px) {
