@@ -23,9 +23,8 @@
 </script>
 <style module>
   .scIcon {
+    width: 656px;
     max-width: 100%;
     overflow: hidden;
-    align-self: stretch;
-    flex: 1;
   }
 </style>

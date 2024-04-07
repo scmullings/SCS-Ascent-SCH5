@@ -86,12 +86,11 @@
     justify-content: center;
   }
   .property1inactive {
-    width: 125px;
     box-shadow: var(--btn-off-style);
-    height: 48px;
     text-align: center;
     font-size: var(--button-text-size);
     color: var(--text-dark);
-    font-family: var(--header-3-h3-s-semi-bold);
+    font-family: var(--buttons-large-dgbtn-l-regular);
+    align-self: stretch;
   }
 </style>

@@ -2,20 +2,20 @@ import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
 
-import StartScreen from "./pages/StartScreen.vue";
 import MainPage from "./pages/MainPage.vue";
+import StartScreen from "./pages/StartScreen.vue";
 import "./global.css";
 
 const routes = [
   {
     path: "/",
-    name: "StartScreen",
-    component: StartScreen,
-  },
-  {
-    path: "/main-page",
     name: "MainPage",
     component: MainPage,
+  },
+  {
+    path: "/start-screen",
+    name: "StartScreen",
+    component: StartScreen,
   },
 ];
 
