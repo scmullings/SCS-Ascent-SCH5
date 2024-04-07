@@ -64,8 +64,8 @@
     bottom: 28.69%;
     left: 28.88%;
     border-radius: 50%;
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
   }
   .circleDpadItem {
     position: absolute;
@@ -198,8 +198,8 @@
     height: 64px;
     width: 140px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -248,11 +248,10 @@
     box-sizing: border-box;
     gap: var(--gap-lg);
     max-width: 100%;
-    z-index: 3;
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 
   @media screen and (max-width: 450px) {

@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.sourceList">
+  <section :class="$style.sourceList">
     <div :class="$style.sourcesList">
       <ButtonSource
         iconBluray="/icon-display.svg"
@@ -65,7 +65,7 @@
       </div>
       <div :class="$style.volume">Volume</div>
     </button>
-  </div>
+  </section>
 </template>
 <script>
   import { defineComponent } from "vue";
@@ -81,17 +81,16 @@
     width: 42px;
     height: 42px;
     position: relative;
-    object-fit: contain;
+    object-fit: cover;
   }
   .camera {
     width: 68px;
-    height: 22px;
     position: relative;
-    line-height: 21.6px;
+    line-height: 22px;
     display: inline-block;
   }
   .buttonSource {
-    background-color: var(--theme-light-btn-src-off);
+    background-color: var(--theme-light-btn-control-off);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-right: 1px solid var(--theme-light-stroke);
     border-left: 1px solid var(--theme-light-stroke);
@@ -105,7 +104,7 @@
     gap: var(--gap-5xs);
   }
   .sourcesList {
-    width: 1120px;
+    width: 1140px;
     overflow-x: auto;
     flex-shrink: 0;
     display: flex;
@@ -249,7 +248,7 @@
     position: relative;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     line-height: 22px;
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
     color: var(--theme-light-text-light);
     text-align: left;
     display: inline-block;
@@ -261,7 +260,7 @@
     padding: var(--padding-sm) var(--padding-17xl);
     background-color: transparent;
     background: linear-gradient(180deg, #2a2f34, #181c1e);
-    box-shadow: var(--new);
+    box-shadow: var(--dg-shadows-new);
     border-left: 2px solid var(--theme-light-stroke);
     overflow: hidden;
     display: flex;
@@ -282,10 +281,10 @@
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1225px) {
     .sourceList {
       flex-wrap: wrap;
     }

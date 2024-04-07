@@ -75,7 +75,7 @@
     position: relative;
     font-size: var(--buttons-small-dg-btn-s-regular-size);
     line-height: 17px;
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
     color: var(--theme-light-text-dark);
     text-align: left;
     display: inline-block;
@@ -100,8 +100,8 @@
   }
   .buttonDisplay {
     border-radius: var(--br-8xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -111,6 +111,6 @@
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 </style>

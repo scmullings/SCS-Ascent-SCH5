@@ -53,7 +53,7 @@
     position: relative;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     line-height: 22px;
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
     color: var(--theme-light-text-dark);
     text-align: left;
     display: inline-block;
@@ -63,7 +63,7 @@
     cursor: pointer;
     border: none;
     padding: var(--padding-sm) var(--padding-48xl);
-    background-color: var(--theme-light-btn-src-off);
+    background-color: var(--theme-light-btn-control-off);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-right: 1px solid var(--theme-light-stroke);
     border-left: 1px solid var(--theme-light-stroke);

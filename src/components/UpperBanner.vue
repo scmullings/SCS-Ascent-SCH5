@@ -174,7 +174,7 @@
     height: 56px;
     width: 56px;
     position: relative;
-    object-fit: contain;
+    object-fit: cover;
   }
   .iconPower {
     width: 48px;
@@ -228,6 +228,6 @@
     text-align: left;
     font-size: var(--buttons-small-dg-btn-s-regular-size);
     color: var(--theme-light-text-light);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 </style>

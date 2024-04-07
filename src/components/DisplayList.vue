@@ -28,7 +28,7 @@
   .displayList {
     align-self: stretch;
     background-color: var(--theme-light-bg-page);
-    box-shadow: var(--new);
+    box-shadow: var(--dg-shadows-new);
     overflow-x: auto;
     display: flex;
     flex-direction: row;
@@ -39,6 +39,6 @@
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 </style>

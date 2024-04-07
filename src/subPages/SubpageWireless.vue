@@ -1,10 +1,10 @@
 <template>
   <div :class="$style.subpageWireless">
     <div :class="$style.wirelessControls">Wireless Controls</div>
-    <div :class="$style.pleaseUseOne">
+    <footer :class="$style.pleaseUseOne">
       Please use one of the wireless USB dongles and follow the on-screen
       instructions to present your device
-    </div>
+    </footer>
   </div>
 </template>
 <script>
@@ -27,7 +27,10 @@
     align-self: stretch;
     height: 387px;
     position: relative;
+    font-size: var(--subheading-dg-sh-regular-size);
     line-height: 32px;
+    font-family: var(--header-3-h3-s-semi-bold);
+    color: var(--theme-light-text-dark);
     text-align: center;
     display: flex;
     align-items: center;
@@ -45,11 +48,10 @@
     box-sizing: border-box;
     gap: var(--gap-2xl);
     max-width: 100%;
-    z-index: 4;
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 
   @media screen and (max-width: 450px) {

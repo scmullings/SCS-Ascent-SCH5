@@ -44,11 +44,10 @@
     box-sizing: border-box;
     gap: var(--gap-5xs);
     max-width: 100%;
-    z-index: 5;
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 
   @media screen and (max-width: 450px) {

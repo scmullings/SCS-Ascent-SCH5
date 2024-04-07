@@ -145,8 +145,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,8 +161,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -177,8 +177,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -202,8 +202,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -218,8 +218,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -234,8 +234,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -259,8 +259,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -275,8 +275,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -291,8 +291,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -316,8 +316,8 @@
     width: 80px;
     flex: 0.8125;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -345,8 +345,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,8 +370,8 @@
     align-self: stretch;
     height: 64px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,8 +396,8 @@
     align-self: stretch;
     flex: 1;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,8 +421,8 @@
     align-self: stretch;
     height: 64px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,8 +457,8 @@
     width: 80px;
     height: 64px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -474,8 +474,8 @@
     width: 80px;
     height: 64px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -494,8 +494,8 @@
     width: 80px;
     height: 64px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -511,8 +511,8 @@
     width: 80px;
     height: 64px;
     border-radius: var(--br-9xs);
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -539,8 +539,8 @@
     bottom: 31.53%;
     left: 28.88%;
     border-radius: 50%;
-    background-color: var(--theme-light-btn-src-off);
-    box-shadow: var(--new);
+    background-color: var(--theme-light-btn-control-off);
+    box-shadow: var(--dg-shadows-new);
   }
   .circleDpadItem {
     position: absolute;
@@ -689,11 +689,10 @@
     box-sizing: border-box;
     gap: var(--gap-lg);
     max-width: 100%;
-    z-index: 2;
     text-align: left;
     font-size: var(--subheading-dg-sh-regular-size);
     color: var(--theme-light-text-dark);
-    font-family: var(--buttons-large-dgbtn-l-regular);
+    font-family: var(--header-3-h3-s-semi-bold);
   }
 
   @media screen and (max-width: 1050px) {
