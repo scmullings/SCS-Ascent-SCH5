@@ -1,14 +1,16 @@
 <template>
   <div :class="$style.displayList">
-    <ButtonDisplay1 display1="Display 1" /><ButtonDisplay1
+    <ButtonDisplay 
+      display1="Display 1" />
+    <ButtonDisplay
       display1="Display 2"
       propWidth="unset"
       display1MinWidth="80px"
-    /><ButtonDisplay1
+    /><ButtonDisplay
       display1="Display 3"
       propWidth="unset"
       display1MinWidth="80px"
-    /><ButtonDisplay1
+    /><ButtonDisplay
       display1="Display 4"
       propWidth="unset"
       display1MinWidth="80px"
@@ -17,11 +19,11 @@
 </template>
 <script>
   import { defineComponent } from "vue";
-  import ButtonDisplay1 from "./ButtonDisplay.vue";
+  import ButtonDisplay from "./ButtonDisplay.vue";
 
   export default defineComponent({
-    name: "DisplayList1",
-    components: { ButtonDisplay1 },
+    name: "DisplayList",
+    components: { ButtonDisplay },
   });
 </script>
 <style module>

@@ -1,12 +1,8 @@
 <template>
-  <section :class="$style.subpageInstructionsWrapper">
-    <div :class="$style.subpageInstructions" data-animate-on-scroll>
-      <div :class="$style.instructions">Instructions</div>
-      <div :class="$style.roomPCInstance">
-        <div :class="$style.selectASource">Select a source to begin.</div>
-      </div>
-    </div>
-  </section>
+  <div :class="$style.subpageInstructions" data-animate-on-scroll>
+    <div :class="$style.instructions">Instructions</div>
+      <div :class="$style.selectASource">Select a source to begin.</div>
+  </div>
 </template>
 <script>
   import { defineComponent } from "vue";
@@ -45,6 +41,7 @@
     },
   });
 </script>
+
 <style module>
   .instructions {
     position: relative;
@@ -52,40 +49,32 @@
     font-weight: 600;
   }
   .selectASource {
-    margin-top: -32px;
-    height: 440px;
-    flex: 1;
+    align-self: stretch;
+    height: 400px;
     position: relative;
     line-height: 32px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-  }
-  .roomPCInstance {
-    align-self: stretch;
-    height: 408px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0px 0px 0px;
-    box-sizing: border-box;
-    max-width: 100%;
-    text-align: center;
   }
   .subpageInstructions {
-    flex: 1;
+    align-self: stretch;
+    overflow-x: auto;
     background-color: var(--theme-light-bg-card);
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: var(--padding-xl);
     box-sizing: border-box;
-    opacity: 0;
+    gap: var(--gap-5xs);
     max-width: 100%;
+    z-index: 1;
+    text-align: left;
+    font-size: var(--subheading-dg-sh-regular-size);
+    color: var(--theme-light-text-dark);
+    font-family: var(--buttons-large-dgbtn-l-regular);
   }
   .subpageInstructions.animate {
     animation: 0.25s ease 0s 1 normal forwards slide-in-bottom;
@@ -100,21 +89,6 @@
       transform: translateY(0);
       opacity: 1;
     }
-  }
-  .subpageInstructionsWrapper {
-    align-self: stretch;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0px var(--padding-5xs);
-    box-sizing: border-box;
-    max-width: 100%;
-    text-align: left;
-    font-size: var(--subheading-dg-sh-regular-size);
-    color: var(--theme-light-text-dark);
-    font-family: var(--header-3-h3-s-semi-bold);
   }
 
   @media screen and (max-width: 450px) {

@@ -49,7 +49,7 @@
   import { defineComponent } from "vue";
 
   export default defineComponent({
-    name: "UpperBanner1",
+    name: "UpperBanner",
     methods: {
       onIconPowerClick() {
         this.$router.push("/system-power");

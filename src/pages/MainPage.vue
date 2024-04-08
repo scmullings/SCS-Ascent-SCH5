@@ -2,36 +2,39 @@
   <div :class="$style.mainPage">
     <main :class="$style.bgMain">
       <section :class="$style.upperBannerParent">
-        <UpperBanner1 /><DisplayList1 />
+        <UpperBanner /><DisplayList />
       </section>
-      <SubpageRoomPC /><SubpageWireless /><SubpageAppleTV /><SubpageTV /><SubpageLaptop /><SubpageInstruction /><SourceList1 />
+      <SubpageRoomPC /><SubpageWireless /><SubpageAppleTV /><SubpageTV /><SubpageLaptop /><SubpageInstruction />
+      <section>
+        <SourceList />
+      </section>
     </main>
   </div>
 </template>
 <script>
   import { defineComponent } from "vue";
-  import UpperBanner1 from "../components/UpperBanner.vue";
-  import DisplayList1 from "../components/DisplayList.vue";
+  import UpperBanner from "../components/UpperBanner.vue";
+  import DisplayList from "../components/DisplayList.vue";
   import SubpageRoomPC from "../subPages/SubpageRoomPC.vue";
   import SubpageWireless from "../subPages/SubpageWireless.vue";
   import SubpageAppleTV from "../subPages/SubpageAppleTV.vue";
   import SubpageTV from "../subPages/SubpageTV.vue";
   import SubpageLaptop from "../subPages/SubpageLaptop.vue";
-  import SubpageInstruction from "../components/FrameComponent.vue";
-  import SourceList1 from "../components/SourceList.vue";
+  import SubpageInstruction from "../subPages/Instructions.vue";
+  import SourceList from "../components/SourceList.vue";
 
   export default defineComponent({
     name: "MainPage",
     components: {
-      UpperBanner1,
-      DisplayList1,
+      UpperBanner,
+      DisplayList,
       SubpageRoomPC,
       SubpageWireless,
       SubpageAppleTV,
       SubpageTV,
       SubpageLaptop,
       SubpageInstruction,
-      SourceList1,
+      SourceList,
     },
   });
 </script>
@@ -56,10 +59,11 @@
   }
   .mainPage {
     width: 100%;
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
     letter-spacing: normal;
   }

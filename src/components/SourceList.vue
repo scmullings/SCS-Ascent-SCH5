@@ -72,7 +72,7 @@
   import ButtonSource from "./ButtonSource.vue";
 
   export default defineComponent({
-    name: "SourceList1",
+    name: "SourceList",
     components: { ButtonSource },
   });
 </script>
@@ -104,10 +104,10 @@
     gap: var(--gap-5xs);
   }
   .sourcesList {
-    width: 1140px;
+    width: fill;
     overflow-x: auto;
     flex-shrink: 0;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -245,14 +245,15 @@
     position: relative;
   }
   .volume {
-    position: relative;
+    position: right;
+    width: 120px;
+    min-width: 100px;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     line-height: 22px;
     font-family: var(--header-3-h3-s-semi-bold);
     color: var(--theme-light-text-light);
-    text-align: left;
-    display: inline-block;
-    min-width: 66px;
+    text-align: center;
+    display: block;
   }
   .buttonNavVolume {
     cursor: pointer;
@@ -270,14 +271,17 @@
     gap: var(--gap-5xs);
   }
   .sourceList {
-    background: linear-gradient(180deg, #2a2f34, #181c1e);
-    overflow: hidden;
+    align-self: stretch;
+    min-width: 100px;
+    background-color: var(--theme-light-bg-page);
+    box-shadow: var(--dg-shadows-new);
+    overflow-x: auto;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    row-gap: 20px;
-    max-width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4px;
+    gap: var(--gap-3xs);
     text-align: left;
     font-size: var(--buttons-large-dgbtn-l-regular-size);
     color: var(--theme-light-text-dark);
@@ -286,7 +290,7 @@
 
   @media screen and (max-width: 1225px) {
     .sourceList {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
   }
 </style>
