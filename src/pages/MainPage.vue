@@ -48,23 +48,21 @@
     max-width: 100%;
   }
   .bgMain {
-    flex: 1;
-    background-color: var(--theme-light-bg-card);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: var(--gap-5xs);
-    max-width: 100%;
+    min-height: 100vh;
+	height: 100vh;
+	max-height: 100vh;
+	min-width: 100vw;
+	width: 100vw;
+	max-width: 100vw;
+	overflow: auto;
   }
   .mainPage {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    letter-spacing: normal;
+    min-height: 100vh;
+	height: 100vh;
+	max-height: 100vh;
+	min-width: 100vw;
+	width: 100vw;
+	max-width: 100vw;
+	overflow: auto;
   }
 </style>
